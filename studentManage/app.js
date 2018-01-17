@@ -1,0 +1,18 @@
+var express = require('express')
+var bodyParser = require('body-parser')
+var controller = require('./controller')
+var app = express()
+
+app.use(express.static('public'))
+app.use(express.static('bower_components'))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+app.get('/getStudents', controller.getStudents)
+app.get('/search/:id', controller.search)
+app.post('/addStudent', controller.addStudent)
+app.post('/deleteStudents', controller.deleteMany)
+app.post('/updateStudent/:id', controller.updateStudent)
+app.post('/login', controller.login)
+app.post('/regist', controller.regist)
+app.listen(3000)

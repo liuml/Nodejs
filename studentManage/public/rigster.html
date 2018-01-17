@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>注册</title>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .container{
+      padding-top: 10%;
+    }
+    #rigst_btn{
+      margin: 40px 0;
+    }
+    .alert{
+      display: none;
+    }
+  </style>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fulid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">**大学学生信息管理系统</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">登录</a></li>
+          <li class="active"><a href="#">注册</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="row">
+      <form class="col-sm-offset-4 col-sm-4">
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" class="form-control" id="name" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input type="password" class="form-control" id="password" placeholder="请输入密码">
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="rigst_btn">注册</button>
+      </form>
+    </div>
+    <div class="row">
+      <div class="alert alert-danger alert-dismissible col-sm-offset-4 col-sm-4" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong id="alert-text">msg!</strong>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/regist.js"></script>
+</body>
+</html>
